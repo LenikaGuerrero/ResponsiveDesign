@@ -1,28 +1,49 @@
-/*
+/*Importar Fuentes*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nihnpf');
+  src:  url('../fonts/icomoon.eot?nihnpf#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nihnpf') format('truetype'),
+    url('../fonts/icomoon.woff?nihnpf') format('woff'),
+    url('../fonts/icomoon.svg?nihnpf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-reglas: se conforman de
-    selectores: como identificar un elemento en html
-    declaraciones: lo que se hace con el selector
-    propiedades: lo que se hace con los elementos
-    valores: reciben variables de las propiedades para actuar de forma correcta
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-*/
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/*selector de etiqueta header - section -article - nav */
-/*!important rompe la cascada, toma mayor importancia*/
-/*header{ 
-    background: red;
-}*/
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e900";
+}
 
-/*selector descendente */
-/*body header div nav ol li a*/
 
-/*selector de clase*/
-/* .link */
-
-/*selector de id #*/
-/* #portafolio */
-
+/*CSS del Proyecto*/
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -32,18 +53,14 @@ body {
 h1,h2,h3,h4,h5,h6{
     font-family: 'Fjalla One',sans-serif;
     font-weight: normal;
-    /*font-style: italic*/
 }
 
 h1{
     font-size: 35px;
     line-height: 1.5;
     letter-spacing: -.2px;
-    /*text-transform: capitalize;
-    text-decoration: dashed;*/
     color: white;
     margin: 0;
-    /*margin: 100px 150px 70px 30px;*/
     text-shadow: 1px 2px 2px #000;
     
 }
@@ -63,10 +80,6 @@ h2{
 {
     height: auto;
     background-color: #020404;
-    /* background-image: url('../images/in2.jpg') ; */
-    /* background-size: 300px, 300px; */
-    /* background-repeat: no-repeat; */
-    /* background-position-x: right; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,9 +186,6 @@ figure{
 .flexbox{
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
-    /*flex-wrap: nowrap; Ningun elemento caerá*/
-
 }
 .box{
     width: 50px;
@@ -204,7 +214,6 @@ figure{
 .event-list{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     justify-content: space-evenly;
     background-color: #97A8A8;
 }
@@ -306,7 +315,6 @@ figure{
     border-radius: 5px;
     width: 100px;
     margin: 1em;
-    /*margin:10 auto 0;*/
 }
 
 .form-email h3{
@@ -327,7 +335,6 @@ figure{
 .html-video{
     width: 100%;
     height: auto;
-    /*max-width: 100%;*/
 }
 .youtube-video{
 
