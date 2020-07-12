@@ -1,0 +1,478 @@
+/*
+
+reglas: se conforman de
+    selectores: como identificar un elemento en html
+    declaraciones: lo que se hace con el selector
+    propiedades: lo que se hace con los elementos
+    valores: reciben variables de las propiedades para actuar de forma correcta
+
+*/
+
+/*selector de etiqueta header - section -article - nav */
+/*!important rompe la cascada, toma mayor importancia*/
+/*header{ 
+    background: red;
+}*/
+
+/*selector descendente */
+/*body header div nav ol li a*/
+
+/*selector de clase*/
+/* .link */
+
+/*selector de id #*/
+/* #portafolio */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-color: #97A8A8;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One',sans-serif;
+    font-weight: normal;
+    /*font-style: italic*/
+}
+
+h1{
+    font-size: 35px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    /*text-transform: capitalize;
+    text-decoration: dashed;*/
+    color: white;
+    margin: 0;
+    /*margin: 100px 150px 70px 30px;*/
+    text-shadow: 1px 2px 2px #000;
+    
+}
+h1 strong{
+    color: #007070;
+}
+
+h2{
+    color: #003333;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px ;
+}
+.hero
+{
+    height: auto;
+    background-color: #020404;
+    /* background-image: url('../images/in2.jpg') ; */
+    /* background-size: 300px, 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image{
+    object-fit: cover;
+    
+}
+
+.portfolio
+{
+    background: #97A8A8;
+    padding: 20px;
+}
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.project-course,.project-date,.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One',sans-serif;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details
+{
+    width: 50%;
+}
+.project-imageContainer{
+    width: 50%;
+}
+.project-imageContainer img{
+    max-width: 100%
+}
+
+.header{
+    background-color: #003333;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+    
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    /*flex-wrap: nowrap; Ningun elemento caerá*/
+
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red ;
+    margin: 5px;
+    flex-shrink:0; /*capacidad de encogimiento(adaptacion)*/
+}
+
+.footer{
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    background-color: #97A8A8;
+}
+
+.event-list-title{
+    margin-left: 10px;
+    
+}
+
+.event{
+
+    margin: 1%;
+    width: 48%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background:#EDEDED;
+    
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+.event-url{
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #003333;
+    border-radius: 5px;
+}
+.contact{
+    background-color: #003333;
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.social{
+
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg') ;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 1em;
+    /*margin:10 auto 0;*/
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    flex:1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;   
+}
+
+.html-video{
+    width: 100%;
+    height: auto;
+    /*max-width: 100%;*/
+}
+.youtube-video{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+.flexible-video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: blue;
+    position: relative;
+}
+
+/*Desktop First - Empezar por el MQ mas grande*/
+@media screen and (max-width: 1024px){
+    .container{
+        padding:0 1em;
+    }
+    .hero{
+        height: auto;
+        position:relative;
+        overflow: hidden;
+        padding: 1em;
+    }
+    h1{
+        font-size: 1.8em;
+        z-index: 2;
+    }
+    .hero-image{
+        position:absolute;
+        z-index: 1;
+        right: 0;
+        left: 28em;
+        bottom: 0;
+        top:0;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px){ /*Tablets*/
+    .hero-image{
+        left: 0;
+        width: 100%;
+    }
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+    }
+    .project-course, .project-date, .project-url{
+        margin: .3em 0;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: .7em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+    .event{
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px){/*Celulares*/
+    .hero-image{
+        width: 100%;
+        left: 0;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .project-details{
+        font-size: 12px;
+    }
+    .event-detail{
+        padding: 1em;
+        margin: -2em .5em .5em;
+    }
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0;
+
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+}
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.2em;
+
+    }
+    .hero{
+        padding: 2em 1em;
+    }
+}
