@@ -28,9 +28,11 @@
 
 .icon-instagram:before {
   content: "\e901";
+  font-size: 56px;
 }
 .icon-github:before {
   content: "\e902";
+  font-size: 56px;
 }
 .icon-facebook:before {
   content: "\e903";
@@ -270,10 +272,6 @@ figure{
 
 }
 
-.social{
-
-}
-
 .social-link{
     display: inline-block;
     width: 50px;
@@ -353,6 +351,7 @@ figure{
     background: blue;
     position: relative;
 }
+
 
 /*Desktop First - Empezar por el MQ mas grande*/
 @media screen and (max-width: 1024px){
