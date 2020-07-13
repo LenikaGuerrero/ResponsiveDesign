@@ -162,15 +162,28 @@
                 <p>Curso de Desarrollo Web Online 2020 <img src="images/platzi.png" width="80" alt="platzi"/></p>
             </div>
             <div>
-                <p>Designed with 🌮 by <a href="https://www.facebook.com/LenikaGuerrero">Lenika Guerrero</a></p>
+                <p>Designed with 🌱 by <a href="https://www.facebook.com/LenikaGuerrero">Lenika Guerrero</a></p>
             </div>
         </div>
     </footer>
     <script type="text/javascript">
+
+        const tablet=window.matchMedia('screen and (max-width: 767px)');
         const menu=document.querySelector('.menu');
         const burgerButton=document.querySelector('#burger-menu');
 
-        burgerButton.addEventListener('click',hideShow);
+        tablet.addListener(validation)
+
+        function validation(event){
+            if(event.matches){
+                burgerButton.addEventListener('click',hideShow);
+            }
+            else{
+                burgerButton.removeEventListener('click',hideShow);
+            }
+        }
+
+        validation(tablet);
 
         function hideShow(){
             if(menu.classList.contains('is-active')){
