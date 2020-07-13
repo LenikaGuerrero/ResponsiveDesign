@@ -352,6 +352,20 @@ figure{
     position: relative;
 }
 
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
 
 /*Desktop First - Empezar por el MQ mas grande*/
 @media screen and (max-width: 1024px){
@@ -380,6 +394,9 @@ figure{
 }
 
 @media screen and (max-width: 767px){ /*Tablets*/
+    .burger-button{
+        display: block;
+    }
     .hero-image{
         left: 0;
         width: 100%;
